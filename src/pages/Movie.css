@@ -1,0 +1,140 @@
+.movie-page {
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 6px;
+  padding: 6rem 4vw 0 4vw;
+}
+
+.movie-container .movie-card {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column-reverse;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: #00090aaf;
+}
+
+.movie-container .movie-card img {
+  max-height: 700px;
+}
+
+.movie-container .movie-card .movie-id {
+  margin-bottom: 10px;
+}
+
+.movie-container .movie-card .movie-id svg {
+  color: #c9c952;
+}
+
+.description {
+  background-color: #00090aaf;
+  padding: 3rem;
+  border-radius: 6px;
+  width: 65%;
+}
+
+.description .info {
+  margin-bottom: 20px;
+}
+
+.description .info svg {
+  color: #c9c952;
+}
+
+.description .info h3 {
+  font-size: 1.5rem;
+}
+
+.description .info p {
+  font-size: 1rem;
+}
+
+.description .info .tagline {
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 1639px) {
+  .movie-page {
+    padding: 4.5rem 4vw 0 4vw;
+  }
+  .movie-container .movie-card img {
+    max-height: 450px;
+  }
+  .description .info h3 {
+    font-size: 1.3rem;
+  }
+
+  .description .info p {
+    font-size: 1rem;
+  }
+
+  .description .info .tagline {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1140px) {
+  .movie-page {
+    padding: 5rem 4vw 0 4vw;
+  }
+  .movie-container .movie-card img {
+    max-height: 400px;
+  }
+  .description .info h3 {
+    font-size: 1.1rem;
+  }
+
+  .description .info p {
+    font-size: 0.9rem;
+  }
+
+  .description .info .tagline {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .movie-container .movie-card .movie-id {
+    margin-bottom: 10px;
+  }
+  .description .info {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 940px) {
+  .movie-page {
+    padding: 5rem 4vw 0 4vw;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .movie-container .movie-card {
+    align-items: center;
+  }
+  .movie-container .movie-card img {
+    max-height: 400px;
+  }
+  .description {
+    width: auto;
+    padding: 2rem;
+  }
+  .description .info h3 {
+    font-size: 1.1rem;
+  }
+
+  .description .info p {
+    font-size: 0.9rem;
+  }
+
+  .description .info .tagline {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .movie-container .movie-card .movie-id {
+    margin-bottom: 10px;
+  }
+  .description .info {
+    margin-bottom: 10px;
+  }
+}

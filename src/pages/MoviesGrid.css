@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+
+.container .title {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  margin: 7rem 0 1.5rem;
+}
+
+.title .query-text {
+  color: #0095b3af;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.movies-container div {
+  width: 20%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #00090aaf;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.movies-container div .movie-id {
+  width: 100%;
+  margin: 0;
+}
+
+.movies-container div img {
+  max-width: 100%;
+}
+
+.movies-container div img,
+.movies-container div h2,
+.movies-container div p {
+  margin-bottom: 0.6rem;
+}
+
+.movies-container div svg {
+  color: #f7d354;
+}
+
+.movies-container div a {
+  background-color: #0095b3af;
+  border: 2px solid #0095b3af;
+  border-radius: 4px;
+  color: #000;
+  padding: 1rem 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.4s;
+  text-align: center;
+  font-weight: bold;
+}
+
+.movies-container div a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+@media (max-width: 1639px) {
+  .movies-container div {
+    width: 21.93%;
+    margin: 0 1rem 2.5rem 1rem;
+  }
+  .movies-container div img,
+  .movies-container div h2,
+  .movies-container div p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1140px) {
+  .movies-container div {
+    width: 20%;
+    margin: 0 0.5rem 2rem 0.5rem;
+  }
+  .movies-container div img,
+  .movies-container div h2,
+  .movies-container div p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 940px) {
+  .movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 90%;
+  }
+  .movies-container div {
+    width: 100%;
+    margin: 0 0.5rem 2rem 0.5rem;
+  }
+  .movies-container div img,
+  .movies-container div h2,
+  .movies-container div p {
+    font-size: 1.2rem;
+  }
+}
