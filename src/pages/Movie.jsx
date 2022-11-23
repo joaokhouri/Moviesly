@@ -2,9 +2,11 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import {
   BsGraphUp,
+  BsFillCameraReelsFill,
   BsWallet2,
   BsHourglassSplit,
   BsFillFileEarmarkTextFill,
+  BsStarFill,
 } from "react-icons/bs";
 
 import MovieCard from "../components/MovieCard";
@@ -47,6 +49,19 @@ const Movie = () => {
           <div className="description">
             <div className="info">
               <p className="tagline">"{movie.tagline}"</p>
+            </div>
+            <div className="info">
+              <h3>
+                <BsFillCameraReelsFill /> Gêneros:
+              </h3>
+              <ul className="genres">
+                {movie.genres.map((gen) => (
+                  <li>
+                    <BsStarFill />
+                    {gen.name}
+                  </li>
+                ))}
+              </ul>
             </div>
             <div className="info">
               <h3>

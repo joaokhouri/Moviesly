@@ -44,6 +44,7 @@
 
 .description .info h3 {
   font-size: 1.5rem;
+  margin-bottom: 5px;
 }
 
 .description .info p {
@@ -55,9 +56,22 @@
   text-align: center;
 }
 
+.description .info .genres {
+  display: flex;
+  list-style: none;
+}
+
+.description .info .genres li {
+  margin-right: 20px;
+}
+
+.description .info .genres li svg {
+  margin-right: 5px;
+}
+
 @media (max-width: 1639px) {
   .movie-page {
-    padding: 4.5rem 4vw 0 4vw;
+    padding: 6rem 4vw 0 4vw;
   }
   .movie-container .movie-card img {
     max-height: 450px;
@@ -78,7 +92,7 @@
 
 @media (max-width: 1140px) {
   .movie-page {
-    padding: 5rem 4vw 0 4vw;
+    padding: 6rem 4vw 0 4vw;
   }
   .movie-container .movie-card img {
     max-height: 400px;
@@ -105,7 +119,7 @@
 
 @media (max-width: 940px) {
   .movie-page {
-    padding: 5rem 4vw 0 4vw;
+    padding: 6rem 4vw 0 4vw;
     flex-direction: column;
     justify-content: center;
   }
